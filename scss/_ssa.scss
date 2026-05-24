@@ -1,0 +1,76 @@
+@use 'variables';
+
+.definition {
+  max-width: variables.$max-width-small;
+  border-radius: 10px;
+  background-color: variables.$color-card;
+  text-align: left;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.s-e {
+  padding-left: 15px;
+
+  ol {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 15px;
+  }
+
+  li {
+    counter-increment: item;
+    display: flex;
+    gap: 0.75rem;
+
+    &::before {
+      content: counter(item) ".";
+      min-width: 1.5rem;
+    }
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 700px 1fr;
+  grid-template-rows: repeat(4, auto);
+
+  grid-template-areas:
+    ". p1 ."
+    ". p2 ."
+    ". p3 ."
+    ". p4 .";
+}
+
+.p1 {
+  padding-top: 1.5rem;
+  grid-area: p1;
+}
+
+.p2 {
+  padding-top: 1rem;
+  grid-area: p2;
+}
+
+.p3 {
+  padding-top: 1rem;
+  grid-area: p3;
+}
+
+.p4 {
+  padding-top: 1rem;
+  grid-area: p4;
+}
+
+.details div {
+  h2 {
+    background: red;
+    color: bisque;
+    padding-left: 0.5rem;
+  }
+
+  p {
+    text-align: justify;
+    background: bisque;
+  }
+}

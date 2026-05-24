@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* Général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-10 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.h2-center {
+  text-align: center;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.conteneur {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  background: black;
+  line-height: 2rem;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: auto;
+}
+.header nav h1 {
+  margin: 0;
+  padding: 0;
+}
+.header nav h1 a {
+  color: white;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header nav ul li a {
+  color: white;
+  padding: 2rem;
+  display: block;
+}
+.header nav ul li a:hover {
+  background: #444;
+}
+
+.active {
+  background: #444;
+}
+
+body h2 {
+  padding-left: 2rem;
+  color: #333;
+}
+
+.h1-center-italic {
+  text-align: center;
+  color: red;
+  font-style: italic;
+}
+
+.obj-fonc {
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.obj-fonc h2 {
+  text-align: left;
+  color: green;
+}
+
+.definition {
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: rgb(234, 234, 187);
+  text-align: left;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.s-e {
+  padding-left: 15px;
+}
+.s-e ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 15px;
+}
+.s-e li {
+  counter-increment: item;
+  display: flex;
+  gap: 0.75rem;
+}
+.s-e li::before {
+  content: counter(item) ".";
+  min-width: 1.5rem;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 700px 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: ". p1 ." ". p2 ." ". p3 ." ". p4 .";
+}
+
+.p1 {
+  padding-top: 1.5rem;
+  grid-area: p1;
+}
+
+.p2 {
+  padding-top: 1rem;
+  grid-area: p2;
+}
+
+.p3 {
+  padding-top: 1rem;
+  grid-area: p3;
+}
+
+.p4 {
+  padding-top: 1rem;
+  grid-area: p4;
+}
+
+.details div h2 {
+  background: red;
+  color: bisque;
+  padding-left: 0.5rem;
+}
+.details div p {
+  text-align: justify;
+  background: bisque;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.ligne-champs {
+  display: flex;
+  gap: 10px;
+  max-width: 410px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.champ-formulaire {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 1.5rem auto;
+}
+.champ-formulaire label {
+  align-self: flex-start;
+}
+
+#prenom,
+#nom {
+  width: 200px;
+}
+
+#email,
+#message {
+  width: 410px;
+  max-width: 100%;
+}
+
+.btn-primaire {
+  display: block;
+  margin: 0.5rem auto 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

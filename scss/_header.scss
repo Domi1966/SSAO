@@ -1,0 +1,46 @@
+@use 'variables';
+
+.header {
+  background: variables.$color-header;
+  line-height: 2rem;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    overflow: auto;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+
+      a {
+        color: variables.$color-light;
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          color: variables.$color-light;
+          padding: 2rem;
+          display: block;
+
+          &:hover {
+            background: variables.$color-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background: variables.$color-hover;
+}

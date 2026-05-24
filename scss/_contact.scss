@@ -1,0 +1,38 @@
+.form-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.ligne-champs {
+  display: flex;
+  gap: 10px;
+  max-width: 410px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.champ-formulaire {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 1.5rem auto;
+
+  label {
+    align-self: flex-start;
+  }
+}
+
+#prenom,
+#nom {
+  width: 200px;
+}
+
+#email,
+#message {
+  width: 410px;
+  max-width: 100%;
+}
+
+.btn-primaire {
+  display: block;
+  margin: 0.5rem auto 0 auto;
+}

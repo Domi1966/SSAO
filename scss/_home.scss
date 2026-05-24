@@ -1,0 +1,24 @@
+@use 'variables';
+
+body {
+  h2 {
+    padding-left: 2rem;
+    color: variables.$color-title;
+  }
+}
+
+.h1-center-italic {
+  text-align: center;
+  color: variables.$color-red;
+  font-style: italic;
+}
+
+.obj-fonc {
+  margin: 0 auto;
+  padding-top: 30px;
+
+  h2 {
+    text-align: left;
+    color: variables.$color-green;
+  }
+}
