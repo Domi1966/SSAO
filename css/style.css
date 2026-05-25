@@ -118,9 +118,9 @@ body h2 {
 
 .details {
   display: grid;
-  grid-template-columns: 1fr 700px 1fr;
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: ". p1 ." ". p2 ." ". p3 ." ". p4 .";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "p1 p1 ." ". i1 . " ". p2 p2" ". i2 . " "p3 p3 ." ". i3 . " ". p4 p4" ". i4 . ";
 }
 
 .p1 {
@@ -128,9 +128,19 @@ body h2 {
   grid-area: p1;
 }
 
+.i1 {
+  padding-top: 1.5rem;
+  grid-area: i1;
+}
+
 .p2 {
   padding-top: 1rem;
   grid-area: p2;
+}
+
+.i2 {
+  padding-top: 1.5rem;
+  grid-area: i1;
 }
 
 .p3 {
@@ -138,9 +148,19 @@ body h2 {
   grid-area: p3;
 }
 
+.i3 {
+  padding-top: 1.5rem;
+  grid-area: i1;
+}
+
 .p4 {
   padding-top: 1rem;
   grid-area: p4;
+}
+
+.i4 {
+  padding-top: 1.5rem;
+  grid-area: i1;
 }
 
 .details div h2 {
