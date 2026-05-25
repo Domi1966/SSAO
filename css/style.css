@@ -130,6 +130,7 @@ body h2 {
 
 .i1 {
   padding-top: 1.5rem;
+  align-items: center;
   grid-area: i1;
 }
 
@@ -140,7 +141,8 @@ body h2 {
 
 .i2 {
   padding-top: 1.5rem;
-  grid-area: i1;
+  align-items: center;
+  grid-area: i2;
 }
 
 .p3 {
@@ -150,7 +152,8 @@ body h2 {
 
 .i3 {
   padding-top: 1.5rem;
-  grid-area: i1;
+  align-items: center;
+  grid-area: i3;
 }
 
 .p4 {
@@ -160,7 +163,8 @@ body h2 {
 
 .i4 {
   padding-top: 1.5rem;
-  grid-area: i1;
+  align-items: center;
+  grid-area: i4;
 }
 
 .details div h2 {
