@@ -1,3 +1,6 @@
+.h1-center-italic {
+  margin: 1rem;
+}
 .form-contact {
   display: flex;
   flex-direction: column;
@@ -14,7 +17,7 @@
 .champ-formulaire {
   display: flex;
   flex-direction: column;
-  margin: 0 auto 1.5rem auto;
+  margin: 2rem auto 0 auto;
 
   label {
     align-self: flex-start;
@@ -34,5 +37,5 @@
 
 .btn-primaire {
   display: block;
-  margin: 0.5rem auto 0 auto;
+  margin: 1rem auto 0 auto;
 }

@@ -2,22 +2,19 @@
 
 .definition {
   max-width: variables.$max-width-small;
-  border-radius: 10px;
+  border-radius: 1rem;
+  border: 2px solid red;
   background-color: variables.$color-card;
   text-align: left;
-  padding: 1rem;
-  margin: 0 auto;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0 auto 2rem auto;
 }
 
 .s-e {
+  list-style: none;
+  counter-reset: item;
   padding-left: 15px;
-
-  ol {
-    list-style: none;
-    counter-reset: item;
-    padding-left: 15px;
-  }
-
+  
   li {
     counter-increment: item;
     display: flex;
@@ -32,73 +29,68 @@
 
 .details {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: repeat(8, auto);
 
   grid-template-areas:
-    "p1 p1 ."
-    ". i1 . "
-    ". p2 p2"
-    ". i2 . "
-    "p3 p3 ."
-    ". i3 . "
-    ". p4 p4"
-    ". i4 . ";
+    ". p1 ."
+    ". i1 ."
+    ". p2 ."
+    ". i2 ."
+    ". p3 ."
+    ". i3 ."
+    ". p4 ."
+    ". i4 .";
 }
-
-.p1 {
-  padding-top: 1.5rem;
-  grid-area: p1;
-}
-
-.i1 {
-  padding-top: 1.5rem;
-  align-items: center;
-  grid-area:i1;
-}
-
-.p2 {
-  padding-top: 1rem;
-  grid-area: p2;
-}
-
-.i2 {
-  padding-top: 1.5rem;
-  align-items: center;
-  grid-area:i2;
-}
-
-.p3 {
-  padding-top: 1rem;
-  grid-area: p3;
-}
-
-.i3 {
-  padding-top: 1.5rem;
-  align-items: center;
-  grid-area:i3;
-}
-
-.p4 {
-  padding-top: 1rem;
-  grid-area: p4;
-}
-
-.i4 {
-  padding-top: 1.5rem;
-  align-items: center;
-  grid-area:i4;
-}
-
-.details div {
+.p1,
+.p2,
+.p3,
+.p4  {
   h2 {
     background: red;
-    color: bisque;
+    color: variables.$color-bisque;
     padding-left: 0.5rem;
   }
 
   p {
+    padding: 1rem;
     text-align: justify;
-    background: bisque;
+    background: variables.$color-bisque;
+  }
+}
+
+.p1{grid-area: p1;}
+.p2{grid-area: p2;}
+.p3{grid-area: p3;}
+.p4{grid-area: p4;}
+
+
+.i1,
+.i2,
+.i3,
+.i4 {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+  display: block;
+}
+
+.i1 { grid-area: i1; }
+.i2 { grid-area: i2; }
+.i3 { grid-area: i3; }
+.i4 { grid-area: i4; }
+
+.details div {
+  border: 1px solid red;
+  background: variables.$color-card;
+  h2 {
+    background: red;
+    color: variables.$color-bisque;
+    padding-left: 1rem;
+  }
+
+  p {
+    text-align: justify;
+    background: variables.$color-bisque;
   }
 }
