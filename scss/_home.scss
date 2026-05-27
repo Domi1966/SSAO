@@ -1,24 +1,34 @@
 @use 'variables';
 
 body {
+  
+  .img-center {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
   h2 {
     padding-left: 2rem;
     color: variables.$color-title;
   }
-}
-
-.h1-center-italic {
-  text-align: center;
-  color: variables.$color-red;
-  font-style: italic;
+  .home-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 .obj-fonc {
   margin: 0 auto;
   padding-top: 30px;
-
+  color:variables.$color-dark;
   h2 {
     text-align: left;
     color: variables.$color-green;
+    padding-bottom: 1rem;
+    li {
+      color: variables.$color-dark;
+    }
   }
 }
